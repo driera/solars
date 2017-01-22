@@ -1,0 +1,6 @@
+$cool-color: #0099cc;
+
+h1 {
+    color: $cool-color;
+    font-size: 32px;
+}
