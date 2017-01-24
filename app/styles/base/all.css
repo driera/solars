@@ -1,1 +1,2 @@
-$cool-color: #0099cc;
+@import '_reset.css';
+@import '_default.css';

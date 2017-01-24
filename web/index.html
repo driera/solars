@@ -1,13 +1,127 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="theme" content="#0099CC">
-        <title>frontend starter theme</title>
-        <link rel="stylesheet" href="./css/main.css">
-        </head>
-    <body>
-        <h1>Frontend Starter Theme</h1>
-        HOLAAA
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Frontend Starter Theme</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header"role="banner">
+        <div class="container">
+            <hgroup>
+                <h1 id="site-title"><a href="index.html" title="Your Site Name">Frontend Starter Theme</a></h1>
+                <h2 id="site-description">This is an awesome description of the site!</h2>
+            </hgroup>
+            <nav class="main-navigation" role="navigation">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="about.html">About</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Subpage</a></li>
+                            <li><a href="#">Subpage 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-container">
+        <div class="container">
+            <section class="main-content" role="main">
+                <article class="post">
+                    <header class="post-header">
+                        <h2 class="post-title"><a href="#">Post heading</a></h2>
+                        <a href="#"><img src="https://placehold.it/200x200&text=thumbnail" alt="Post thumbnail" class="thumbnail" /></a>
+                    </header>
+                    <div class="post-content">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in <a href="#">Bookmarksgrove right at the coast of the Semantics</a>, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                        <p><a href="#" class="more-link">Continue reading <span class="meta-nav">&rarr;</span></a></p>
+                    </div>
+                    <footer class="post-meta">
+                        Posted in <a href="#" rel="category">Category Name</a>
+                        on <time class="post-date" datetime="2012-06-25" pubdate>June 25 2012</time>
+                        by <a class="post-author" href="#" title="View all posts by Author" rel="author">Author Name</a>
+                    </footer>
+                </article>
+                <article class="post">
+                    <header class="post-header">
+                        <h2 class="post-title"><a href="#">Post heading</a></h2>
+                        <a href="#"><img src="https://placehold.it/200x200&text=thumbnail" alt="Post thumbnail" class="thumbnail" /></a>
+                    </header>
+                    <div class="post-content">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in <a href="#">Bookmarksgrove right at the coast of the Semantics</a>, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                        <p><a href="#" class="more-link">Continue reading <span class="meta-nav">&rarr;</span></a></p>
+                    </div>
+                    <footer class="post-meta">
+                        Posted in <a href="#" rel="category">Category Name</a>
+                        on <time class="post-date" datetime="2012-06-25" pubdate>June 25 2012</time>
+                        by <a class="post-author" href="#" title="View all posts by Author" rel="author">Author Name</a>
+                    </footer>
+                </article>
+                <article class="post">
+                    <header class="post-header">
+                        <h2 class="post-title"><a href="#">Post heading</a></h2>
+                        <a href="#"><img src="https://placehold.it/200x200&text=thumbnail" alt="Post thumbnail" class="thumbnail" /></a>
+                    </header>
+                    <div class="post-content">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in <a href="#">Bookmarksgrove right at the coast of the Semantics</a>, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                        <p><a href="#" class="more-link">Continue reading <span class="meta-nav">&rarr;</span></a></p>
+                    </div>
+                    <footer class="post-meta">
+                        Posted in <a href="#" rel="category">Category Name</a>
+                        on <time class="post-date" datetime="2012-06-25" pubdate>June 25 2012</time>
+                        by <a class="post-author" href="#" title="View all posts by Author" rel="author">Author Name</a>
+                    </footer>
+                </article>
+            </section>
+            <aside class="main-sidebar" role="complementary">
+                <form role="search" action="#" class="searchform">
+                    <label class="assistive-text" for="s">Search for:</label>
+                    <input type="search" name="s" id="s" results="10" placeholder="Search..." value="">
+                    <input type="submit" value="Search">
+                </form>
+                <div class="widget">
+                    <h3 class="widget-title">Sidebar heading</h3>
+                    <div class="widgetr-content">
+                        <ul>
+                            <li><a href="#">Li element</a></li>
+                            <li><a href="#">Li element</a></li>
+                            <li><a href="#">Li element</a></li>
+                            <li><a href="#">Li element</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="widget">
+                    <h3 class="widget-title">Widget</h3>
+                    <div class="widget-content">
+                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
+                        <p>One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar</p>
+                    </div>
+                </div>
+                <div class="widget">
+                    <h3 class="widget-title">Download now</h3>
+                    <div class="widget-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <b>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</b> consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                        <a href="#" class="btn primary">Id est laborum</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="main-footer" role="contentinfo">
+        <div class="container">
+            <p>Copyright &copy; 2017 <a href="#">Sitename.com</a><span class="sep">|</span> <a href="#">Cookies</a></p>
+            <p><small>Released under <a href="http://www.opensource.org/licenses/bsd-license.php" rel="license">New BSD License</a></small></p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
 </html>
