@@ -12,7 +12,7 @@ $font-path: '../fonts';
 @custom-media --min-desktop-xxlarge (width >= 1400px);
 
 /* Colour palette */
-$primary-color: #0099CC;
+$primary-color: #0077CC;
 $dark-color: #000000;
 $light-color: #FFFFFF;
 
