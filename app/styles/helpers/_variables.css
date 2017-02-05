@@ -1,6 +1,8 @@
 /* Paths */
-$img-path: '../images';
-$font-path: '../fonts';
+:root {
+    --img-path: '../images';
+    --font-path: '../fonts';
+}
 
 /* Breakpoints */
 @custom-media --max-mobile (width <= 480px);
@@ -12,12 +14,20 @@ $font-path: '../fonts';
 @custom-media --min-desktop-xxlarge (width >= 1400px);
 
 /* Colour palette */
-$primary-color: #0077CC;
-$dark-color: #000000;
-$light-color: #FFFFFF;
+:root {
+    --primary-color: #0077CC;
+    --dark-color: #000000;
+    --light-color: #FFFFFF;
+}
+
 
 /* Shadow */
-$box-shadow: 0 10px 20px color($dark-color alpha(-75%));
+:root {
+    --box-shadow: 0 10px 20px color(var(--dark-color) alpha(-75%));
+
+}
 
 /* Fonts */
-$primary-font: Arial, Verdana, sans-serif;
+:root {
+    --primary-font: Arial, Verdana, sans-serif;
+}

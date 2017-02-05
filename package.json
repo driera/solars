@@ -28,6 +28,7 @@
     "cssnano": "^3.10.0",
     "cssnext": "^1.8.4",
     "postcss-pxtorem": "^4.0.0",
+<<<<<<< HEAD
     "precss": "^1.4.0"
   },
   "config": {
@@ -39,5 +40,17 @@
       "destination": "build",
       "temporary": "tmp"
     }
+=======
+    "postcss-simple-vars": "^3.0.0"
+  },
+  "devDependencies": {
+    "gulp-cssnano": "^2.1.2",
+    "gulp-notify": "^3.0.0",
+    "postcss-apply": "^0.4.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-custom-properties": "^5.0.2",
+    "postcss-import": "^9.1.0",
+    "postcss-mixins": "^5.4.1"
+>>>>>>> feature/changes-gulpfiles-packages
   }
 }

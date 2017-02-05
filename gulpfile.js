@@ -1,13 +1,17 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
-var postcss = require('gulp-postcss');
-var sourcemaps = require('gulp-sourcemaps');
-var autoprefixer = require('autoprefixer');
-var cssnext = require('cssnext');
-var precss = require('precss');
-var px2Rem = require('postcss-pxtorem');
-var nano = require('cssnano');
-pjson = require('./package.json');
+var gulp = require('gulp'),
+    postcss = require('gulp-postcss'),
+    autoprefixer = require('autoprefixer'),
+    cssimport = require('postcss-import'),
+    customproperties = require('postcss-custom-properties'),
+    apply = require('postcss-apply'),
+    mixins = require('postcss-mixins'),
+    nested = require('postcss-nested'),
+    customMedia = require('postcss-custom-media'),
+    nano = require('gulp-cssnano'),
+    notify = require('gulp-notify'),
+    sourcemaps = require('gulp-sourcemaps'),
+    browserSync = require('browser-sync').create(),
+    pjson = require('./package.json');
 
 var defaultNotification = function(err) {
     return {
@@ -53,13 +57,19 @@ gulp.task('html', function() {
 
 gulp.task('css', function() {
     var processors = [
-        cssnext,
-        precss,
-        px2Rem,
+        cssimport,
+        customproperties,
+        apply,
+        mixins,
+        nested,
+        customMedia
         autoprefixer({
             browsers: ['last 2 version']
         }),
-        nano
+        nano({
+            discardComments: { removeAll: true },
+            safe: true
+        })
     ];
 
     return gulp.src(config.origUrl + '/styles/*.css')
@@ -67,5 +77,7 @@ gulp.task('css', function() {
         .pipe(postcss(processors))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(config.destUrl + '/css/'))
-        .pipe(browserSync.stream());
+        .pipe(browserSync.stream())
+        .pipe(notify({ message: 'CSS Ready' }));
+
 })
