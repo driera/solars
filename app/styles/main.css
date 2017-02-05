@@ -1,4 +1,4 @@
-$cool-color: #0099cc;
+@import "./base/all.css";
 
 h1 {
     color: $cool-color;

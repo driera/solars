@@ -1,1 +1,0 @@
-{"version":3,"sources":["main.css"],"names":[],"mappings":"AAEA;IACI,eAAmB;IACnB,gBAAgB;CACnB","file":"main.css","sourcesContent":["$cool-color: #0099cc;\n\nh1 {\n    color: $cool-color;\n    font-size: 32px;\n}\n"]}

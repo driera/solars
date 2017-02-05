@@ -1,1 +1,3 @@
-$cool-color: #0099cc;
+:root {
+    --cool-color: #0099cc;
+}
