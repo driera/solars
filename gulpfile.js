@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     mixins = require('postcss-mixins'),
     nested = require('postcss-nested'),
     customMedia = require('postcss-custom-media'),
-    nano = require('gulp-cssnano'),
+    nano = require('cssnano'),
     notify = require('gulp-notify'),
     sourcemaps = require('gulp-sourcemaps'),
     browserSync = require('browser-sync').create(),
@@ -62,7 +62,7 @@ gulp.task('css', function() {
         apply,
         mixins,
         nested,
-        customMedia
+        customMedia,
         autoprefixer({
             browsers: ['last 2 version']
         }),
