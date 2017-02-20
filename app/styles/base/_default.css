@@ -5,7 +5,11 @@
 }
 
 .container {
-    @mixin container;
+    @apply --container;
+}
+
+.clearfix {
+    @apply --clearfix;
 }
 
 a {
@@ -42,4 +46,9 @@ body {
 .main-sidebar {
     flex: 0 1 25%;
     padding-left: 30px;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 32px;
 }

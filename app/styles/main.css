@@ -1,9 +1,4 @@
-@import "./helpers/all.css";
-@import "./base/all.css";
-@import "./layout/all.css";
-@import "./components/all.css";
-
-h1 {
-    color: var(--cool-color);
-    font-size: 32px;
-}
+@import "./helpers/all";
+@import "./base/all";
+@import "./layout/all";
+@import "./components/all";

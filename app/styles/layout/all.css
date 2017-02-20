@@ -1,1 +1,4 @@
-@import "_header.css"
+@import "_header";
+@import "_navbar";
+@import "_block";
+@import '_footer';

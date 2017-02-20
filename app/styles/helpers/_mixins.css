@@ -1,27 +1,29 @@
-@define-mixin clearfix {
-    &:before,
-    &:after {
-        content: "";
-        display: table;
-    }
-    &:after {
-        clear: both;
-    }
-}
-
-@define-mixin container {
-    padding: 0 15px;
-    margin: 0 auto;
-
-    @media (--min-desktop) {
-        width: 750px;
+:root {
+    --clearfix {
+        &:before,
+        &:after {
+            content: "";
+            display: table;
+        }
+        &:after {
+            clear: both;
+        }
     }
 
-    @media (--min-desktop-large) {
-        width: 970px;
-    }
+    --container {
+        padding: 0 15px;
+        margin: 0 auto;
 
-    @media (--min-desktop-xlarge) {
-        width: 1170px;
+        @media (--min-desktop) {
+            width: 750px;
+        }
+
+        @media (--min-desktop-large) {
+            width: 970px;
+        }
+
+        @media (--min-desktop-xlarge) {
+            width: 1170px;
+        }
     }
 }

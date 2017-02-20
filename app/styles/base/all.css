@@ -1,2 +1,3 @@
-@import '_reset.css';
-@import '_default.css';
+@import '_reset';
+@import '_icons';
+@import '_default';
