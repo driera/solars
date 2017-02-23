@@ -20,7 +20,8 @@ var postcss = require('gulp-postcss'),
     cssFor = require('postcss-for'),
     color = require('postcss-color-function');
 
-var config = Object.assign({}, pjson.config, defaultNotification);
+// var config = Object.assign({}, pjson.config, defaultNotification);
+var config = pjson.config;
 
 var processors = [
     cssimport,
@@ -93,7 +94,7 @@ gulp.task('css', function() {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(config.destUrl + '/css/'))
         .pipe(browserSync.stream())
-        .pipe(notify({ message: 'CSS Ready' }));
+        .pipe(notify({ message: '♦ CSS Ready ♦' }));
 
 })
 
@@ -108,7 +109,7 @@ gulp.task('svgo', function() {
 gulp.task('svgSprite', ['svgo'], function () {
     return gulp.src(config.origUrl + '/svg/optimized/*.svg')
     .pipe(svgSymbols({
-        fontSize: 10,
+        fontSize: 32,
         title: '%f icon',
         className: '.icon-%f',
         id: 'icon-%f',

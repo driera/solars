@@ -1,9 +1,3 @@
-/* Paths */
-:root {
-    --img-path: '../images';
-    --font-path: '../fonts';
-}
-
 /* Breakpoints */
 @custom-media --max-mobile (width <= 480px);
 @custom-media --min-tablet (width > 480px);
