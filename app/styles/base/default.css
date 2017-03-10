@@ -49,6 +49,6 @@ body {
 }
 
 h1 {
-    color: var(--primary-color);
+    color: var(--dark-color);
     font-size: 32px;
 }
