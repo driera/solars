@@ -1,5 +1,8 @@
 var gulp = require('gulp'),
     $ = require('gulp-load-plugins')(),
+    browserify = require('browserify'),
+    source = require('vinyl-source-stream'),
+    buffer = require('vinyl-buffer'),
     svgo = require('gulp-svgo'),
     svgSymbols = require('gulp-svg-symbols'),
     nano = require('cssnano'),
@@ -53,7 +56,7 @@ var defaultNotification = function(err) {
     };
 };
 
-gulp.task('default', ['css', 'svg', 'server', 'watch']);
+gulp.task('default', ['css', 'svg', 'server', 'browserify', 'watch']);
 
 // SERVER
 
@@ -72,6 +75,7 @@ gulp.task('server', function() {
 gulp.task('watch', function() {
     gulp.watch(config.origUrl + '/**/*.css', ['css']);
     gulp.watch(config.destUrl + '/**/*.html', ['html']);
+    gulp.watch(config.origUrl + '/**/*.js', ['browserify']);
 });
 
 // HTML
@@ -95,8 +99,26 @@ gulp.task('css', function() {
         .pipe(gulp.dest(config.destUrl + '/css/'))
         .pipe(browserSync.stream())
         .pipe(notify({ message: '♦ CSS Ready ♦' }));
-
 })
+
+// JS
+
+gulp.task('browserify', function() {
+    return browserify(config.origUrl + '/scripts/main.js')
+    .transform('babelify', {presets: ['es2015']})
+    .bundle()
+    .on('error', function (err) {
+        $.notify.onError({
+            title: 'Gulp',
+            subtitle: '¡Browserify Error!',
+            message: '<%= error.message %>'
+        })(err);
+        this.emit('end');
+    })
+    .pipe(source('main.js'))
+    .pipe(gulp.dest(config.destUrl + '/js/'))
+    .pipe(browserSync.stream());
+});
 
 // SVG
 
