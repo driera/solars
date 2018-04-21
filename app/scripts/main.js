@@ -1,7 +1,7 @@
 'use strict';
 
 /* Modules */
-import VueTest from './inits/vue-test';
+import {sum, product} from './inits/sum';
 
 /* Initial setup */
-new VueTest();
+console.log(sum(3, 5), product(3, 5));
