@@ -2,7 +2,7 @@ var cheerio = require('gulp-cheerio');
 var svgo = require('gulp-svgo');
 
 module.exports = function(gulp, config, browserSync) {
-    gulp.task('svgo', [config.tasks.svgo.dependencies], () => {
+    gulp.task('svgo', () => {
         return gulp.src(config.tasks.svgo.src + config.tasks.svgo.pattern)
             .pipe(svgo(config.plugins.svgo))
             .pipe(cheerio({

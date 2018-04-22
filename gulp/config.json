@@ -8,21 +8,21 @@
             "dest": "web/",
             "entry": "index.html",
             "pattern": "**/*.html",
-            "dependencies": []
+            "dependencies": [""]
         },
         "browserify": {
             "src": "app/scripts/",
             "dest": "web/js/",
             "entry": "main.js",
             "pattern": "**/*.js",
-            "dependencies": []
+            "dependencies": [""]
         },
         "css": {
             "src": "app/styles/",
             "dest": "web/css/",
             "entry": "main.css",
             "pattern": "**/*.css",
-            "dependencies": []
+            "dependencies": [""]
         },
         "svg": {
             "src": "app/svg/optimized/",
@@ -36,7 +36,7 @@
             "dest": "app/svg/optimized/",
             "entry": "",
             "pattern": "**/*.svg",
-            "dependencies": []
+            "dependencies": [""]
         }
     },
     "plugins": {

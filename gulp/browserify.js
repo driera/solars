@@ -3,7 +3,7 @@ var vueify = require('vueify');
 var source = require('vinyl-source-stream');
 
 module.exports = function(gulp, config, browserSync) {
-    gulp.task('browserify', [config.tasks.browserify.dependencies], () => {
+    gulp.task('browserify', () => {
         return browserify(config.tasks.browserify.src + config.tasks.browserify.entry)
             .transform('babelify', config.plugins.babel)
             .transform(vueify)
