@@ -30,7 +30,7 @@ module.exports = function(gulp, config, browserSync) {
         nano(config.plugins.nano)
     ];
 
-    gulp.task('css', () => {
+    gulp.task('css', config.tasks.css.dependencies, () => {
         return gulp.src(config.tasks.css.src + config.tasks.css.entry)
             .pipe(sourcemaps.init())
             .pipe(plumber({

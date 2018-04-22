@@ -7,21 +7,15 @@
 @custom-media --min-desktop-xlarge (width >= 1200px);
 @custom-media --min-desktop-xxlarge (width >= 1400px);
 
-/* Colour palette */
 :root {
+    /* Colour palette */
     --primary-color: #0077CC;
     --dark-color: #000000;
     --light-color: #FFFFFF;
-}
 
-
-/* Shadow */
-:root {
+    /* Shadow */
     --box-shadow: 0 10px 20px color(var(--dark-color) alpha(-75%));
 
-}
-
-/* Fonts */
-:root {
+    /* Fonts */
     --primary-font: Arial, Verdana, sans-serif;
 }

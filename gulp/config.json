@@ -15,12 +15,26 @@
             "dest": "web/js/",
             "entry": "main.js",
             "pattern": "**/*.js",
+            "dependencies": ["jsLint"]
+        },
+        "jsLint": {
+            "src": "app/scripts/",
+            "dest": "",
+            "entry": "",
+            "pattern": "**/*.js",
             "dependencies": [""]
         },
         "css": {
             "src": "app/styles/",
             "dest": "web/css/",
             "entry": "main.css",
+            "pattern": "**/*.css",
+            "dependencies": ["cssLint"]
+        },
+        "cssLint": {
+            "src": "app/styles/",
+            "dest": "",
+            "entry": "",
             "pattern": "**/*.css",
             "dependencies": [""]
         },

@@ -2,11 +2,11 @@
 "use strict";
 
 function product(a, b) {
-  return a * b;
+    return a * b;
 }
 
 function sum(a, b) {
-  return a + b;
+    return a + b;
 }
 
 module.exports = { sum: sum, product: product };
@@ -19,6 +19,9 @@ module.exports = { sum: sum, product: product };
 var _sum = require('./inits/sum');
 
 /* Initial setup */
+/* eslint-disable */
 console.log((0, _sum.sum)(3, 5), (0, _sum.product)(3, 5));
+
+/* eslint-enable */
 
 },{"./inits/sum":1}]},{},[2]);
