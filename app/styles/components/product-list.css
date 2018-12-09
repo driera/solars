@@ -1,0 +1,10 @@
+.product-list {
+    padding: 20px 0;
+}
+
+.product-list--title {
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--gray-dark-color);
+}

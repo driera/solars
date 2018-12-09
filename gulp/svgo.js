@@ -9,7 +9,6 @@ module.exports = function(gulp, config, browserSync) {
                 run: function($, file) {
                     var filename = file.relative.split('.')[0];
                     $('svg').attr('class', 'icon icon-' + filename);
-                    $('svg').children().removeAttr('fill');
 
                     if ($('title').length) {
                         $('title').text(filename.replace('-', ' '));

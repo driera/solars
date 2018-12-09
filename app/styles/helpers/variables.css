@@ -8,14 +8,22 @@
 @custom-media --min-desktop-xxlarge (width >= 1400px);
 
 :root {
-    /* Colour palette */
-    --primary-color: #0077CC;
+    /* Colour palette: https://coolors.co/2db580-5b5f97-eaf0ce-f0f7ee-6a706e */
+    --primary-color: #2DB580;
+    --secondary-color: #5B5F97;
+    --tertiary-color: #EFF7F7;
     --dark-color: #000000;
-    --light-color: #FFFFFF;
+    --gray-dark-color: #3B4144;
+    --gray-color: #6A706E;
+    --light-color: #F7F6F7;
+    --white-color: #FFFFFF;
 
     /* Shadow */
-    --box-shadow: 0 10px 20px color(var(--dark-color) alpha(-75%));
+    --box-shadow: 0 5px 10px color(var(--dark-color) alpha(20%));
 
     /* Fonts */
-    --primary-font: Arial, Verdana, sans-serif;
+    --primary-font: Montserrat, Verdana, sans-serif;
+
+    /* Transition */
+    --main-transition: .3s ease-in;
 }
