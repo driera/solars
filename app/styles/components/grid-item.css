@@ -47,7 +47,21 @@
 }
 
 .grid-item--description {
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.4;
     color: var(--gray-color);
+}
+
+.grid-item--actions {
+    span {
+        display: inline-block;
+        padding-right: 20px;
+        color: var(--primary-color);
+    }
+
+    svg {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }

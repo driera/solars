@@ -1,3 +1,22 @@
 .main-header {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 75vh;
+    background-image: url(../img/header-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.main-header--title {
+    max-width: 450px;
+    padding: 100px 0;
+    margin: 0 auto;
+    color: var(--white-color);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+    text-shadow: 0 2px 2px color(var(--dark-color) a(10%));
 }
