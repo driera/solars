@@ -12,19 +12,15 @@
     }
 
     --container {
-        padding: 0 15px;
+        padding: 0 20px;
         margin: 0 auto;
 
         @media (--min-desktop) {
-            width: 750px;
-        }
-
-        @media (--min-desktop-large) {
-            width: 970px;
+            padding: 0 30px;
         }
 
         @media (--min-desktop-xlarge) {
-            width: 1170px;
+            padding: 0 35px;
         }
     }
 }

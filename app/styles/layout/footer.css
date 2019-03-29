@@ -1,1 +1,73 @@
-/* Footer styles */
+.footer-message {
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    background: var(--light-color);
+    color: var(--gray-dark-color);
+}
+
+.footer-message--icon {
+    margin-bottom: 20px;
+    font-size: 80px;
+
+    @media (--min-desktop) {
+        float: left;
+        margin-right: 40px;
+        margin-bottom: 20px;
+        font-size: 80px;
+    }
+}
+
+.footer-message--title {
+    margin-bottom: 1em;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.footer-message--text {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.footer-colophon {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: var(--gray-dark-color);
+}
+
+.footer-colophon--links {
+    margin-bottom: 10px;
+
+    @media (--min-desktop) {
+        text-align: center;
+    }
+
+    li {
+        display: inline-block;
+        padding-right: 10px;
+    }
+
+    a {
+        color: var(--gray-color);
+        font-size: 15px;
+        letter-spacing: .35px;
+        line-height: 1.5;
+
+        &:focus,
+        &:hover {
+            color: var(--light-color);
+        }
+    }
+}
+
+.footer-colophon--text {
+    padding-top: 10px;
+    font-size: 10px;
+    line-height: 1.2;
+    color: var(--gray-color);
+    border-top: 1px solid var(--gray-color);
+
+    @media (--min-desktop) {
+        text-align: center;
+    }
+}

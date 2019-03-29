@@ -13,7 +13,9 @@
 }
 
 a {
+    color: var(--primary-color);
     text-decoration: none;
+    transition: var(--main-transition);
 }
 
 img {
@@ -24,6 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    font-family: var(--primary-font);
 }
 
 .main-header,
@@ -48,7 +51,7 @@ body {
     padding-left: 30px;
 }
 
-h1 {
-    color: var(--dark-color);
-    font-size: 32px;
+sup {
+    vertical-align: super;
+    font-size: .7em;
 }
